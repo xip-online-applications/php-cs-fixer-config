@@ -1,0 +1,15 @@
+{
+    "manifests": {
+        "xip-online-applications/php-cs-fixer-config": {
+            "manifest": {
+                "copy-from-package": {
+                    ".php-cs-fixer.php": ".php-cs-fixer.php"
+                },
+                "gitignore": [
+                    "/.php-cs-fixer.cache"
+                ]
+            },
+            "ref": "6575659682647468ad1fd1cc0fd804c2399264c1"
+        }
+    }
+}

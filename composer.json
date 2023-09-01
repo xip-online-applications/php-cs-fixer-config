@@ -1,0 +1,17 @@
+{
+    "name": "xip-online-applications/php-cs-fixer-config",
+    "description": "Provides a default configuration for php-cs-fixer, based on XIP Online Applications coding standards.",
+    "type": "library",
+    "license": "MIT",
+    "require": {
+        "friendsofphp/php-cs-fixer": "^3.23"
+    },
+    "autoload": {
+        "psr-4": {
+          "XIP\\CS\\": "src"
+        }
+    },
+    "scripts": {
+        "docs": "@php dev-tools/doc.php"
+    }
+}
