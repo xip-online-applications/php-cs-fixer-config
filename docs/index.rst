@@ -84,7 +84,10 @@ Rules
 
 - `class_reference_name_casing <https://cs.symfony.com/doc/rules/casing/class_reference_name_casing.html>`_
 - `clean_namespace <https://cs.symfony.com/doc/rules/namespace_notation/clean_namespace.html>`_
-- `concat_space <https://cs.symfony.com/doc/rules/operator/concat_space.html>`_
+- `concat_space <https://cs.symfony.com/doc/rules/operator/concat_space.html>`_ with config:
+
+  ``['spacing' => 'one']``
+
 - `declare_parentheses <https://cs.symfony.com/doc/rules/language_construct/declare_parentheses.html>`_
 - `echo_tag_syntax <https://cs.symfony.com/doc/rules/php_tag/echo_tag_syntax.html>`_
 - `empty_loop_body <https://cs.symfony.com/doc/rules/control_structure/empty_loop_body.html>`_ with config:
@@ -219,6 +222,32 @@ Rules
 - `unary_operator_spaces <https://cs.symfony.com/doc/rules/operator/unary_operator_spaces.html>`_
 - `whitespace_after_comma_in_array <https://cs.symfony.com/doc/rules/array_notation/whitespace_after_comma_in_array.html>`_
 - `yoda_style <https://cs.symfony.com/doc/rules/control_structure/yoda_style.html>`_
+- `array_indentation <https://cs.symfony.com/doc/rules/whitespace/array_indentation.html>`_
+- `combine_consecutive_issets <https://cs.symfony.com/doc/rules/language_construct/combine_consecutive_issets.html>`_
+- `combine_consecutive_unsets <https://cs.symfony.com/doc/rules/language_construct/combine_consecutive_unsets.html>`_
+- `escape_implicit_backslashes <https://cs.symfony.com/doc/rules/string_notation/escape_implicit_backslashes.html>`_
+- `explicit_indirect_variable <https://cs.symfony.com/doc/rules/language_construct/explicit_indirect_variable.html>`_
+- `explicit_string_variable <https://cs.symfony.com/doc/rules/string_notation/explicit_string_variable.html>`_
+- `heredoc_to_nowdoc <https://cs.symfony.com/doc/rules/string_notation/heredoc_to_nowdoc.html>`_
+- `method_chaining_indentation <https://cs.symfony.com/doc/rules/whitespace/method_chaining_indentation.html>`_
+- `multiline_comment_opening_closing <https://cs.symfony.com/doc/rules/comment/multiline_comment_opening_closing.html>`_
+- `multiline_whitespace_before_semicolons <https://cs.symfony.com/doc/rules/semicolon/multiline_whitespace_before_semicolons.html>`_ with config:
+
+  ``['strategy' => 'new_line_for_chained_calls']``
+
+- `no_superfluous_elseif <https://cs.symfony.com/doc/rules/control_structure/no_superfluous_elseif.html>`_
+- `no_useless_else <https://cs.symfony.com/doc/rules/control_structure/no_useless_else.html>`_
+- `no_useless_return <https://cs.symfony.com/doc/rules/return_notation/no_useless_return.html>`_
+- `php_unit_internal_class <https://cs.symfony.com/doc/rules/php_unit/php_unit_internal_class.html>`_
+- `php_unit_test_class_requires_covers <https://cs.symfony.com/doc/rules/php_unit/php_unit_test_class_requires_covers.html>`_
+- `phpdoc_add_missing_param_annotation <https://cs.symfony.com/doc/rules/phpdoc/phpdoc_add_missing_param_annotation.html>`_
+- `phpdoc_no_empty_return <https://cs.symfony.com/doc/rules/phpdoc/phpdoc_no_empty_return.html>`_
+- `phpdoc_order_by_value <https://cs.symfony.com/doc/rules/phpdoc/phpdoc_order_by_value.html>`_
+- `phpdoc_var_annotation_correct_order <https://cs.symfony.com/doc/rules/phpdoc/phpdoc_var_annotation_correct_order.html>`_
+- `protected_to_private <https://cs.symfony.com/doc/rules/class_notation/protected_to_private.html>`_
+- `return_assignment <https://cs.symfony.com/doc/rules/return_notation/return_assignment.html>`_
+- `self_static_accessor <https://cs.symfony.com/doc/rules/class_notation/self_static_accessor.html>`_
+- `yield_from_array_to_yields <https://cs.symfony.com/doc/rules/array_notation/yield_from_array_to_yields.html>`_
 - `pow_to_exponentiation <https://cs.symfony.com/doc/rules/alias/pow_to_exponentiation.html>`_
 - `no_trailing_whitespace_in_string <https://cs.symfony.com/doc/rules/string_notation/no_trailing_whitespace_in_string.html>`_
 - `array_push <https://cs.symfony.com/doc/rules/alias/array_push.html>`_
@@ -269,13 +298,12 @@ Rules
 - `assign_null_coalescing_to_coalesce_equal <https://cs.symfony.com/doc/rules/operator/assign_null_coalescing_to_coalesce_equal.html>`_
 - `octal_notation <https://cs.symfony.com/doc/rules/basic/octal_notation.html>`_
 - `declare_strict_types <https://cs.symfony.com/doc/rules/strict/declare_strict_types.html>`_
-- `no_useless_else <https://cs.symfony.com/doc/rules/control_structure/no_useless_else.html>`_
-- `no_useless_return <https://cs.symfony.com/doc/rules/return_notation/no_useless_return.html>`_
-- `phpdoc_add_missing_param_annotation <https://cs.symfony.com/doc/rules/phpdoc/phpdoc_add_missing_param_annotation.html>`_ with config:
+- `random_api_migration <https://cs.symfony.com/doc/rules/alias/random_api_migration.html>`_ with config:
 
-  ``['only_untyped' => true]``
+  ``['replacements' => ['mt_rand' => 'random_int', 'rand' => 'random_int']]``
 
 - `void_return <https://cs.symfony.com/doc/rules/function_notation/void_return.html>`_
+- `use_arrow_functions <https://cs.symfony.com/doc/rules/function_notation/use_arrow_functions.html>`_
 
 Disabled rules
 --------------
