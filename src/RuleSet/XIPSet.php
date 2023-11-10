@@ -11,14 +11,12 @@ final class XIPSet extends AbstractRuleSetDescription
     public function getRules(): array
     {
         return $this->getRulesFromRuleSet([
+            '@PhpCsFixer' => true,
             '@Symfony' => true,
             '@Symfony:risky' => true,
             '@PHP82Migration' => true,
-            'declare_strict_types' => true,
-            'no_useless_else' => true,
-            'no_useless_return' => true,
-            'phpdoc_add_missing_param_annotation' => ['only_untyped' => true],
-            'void_return' => true,
+            '@PHP74Migration:risky' => true,
+            'concat_space' => ['spacing' => 'one'],
         ]);
     }
 
